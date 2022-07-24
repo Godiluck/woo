@@ -34,6 +34,7 @@ function trade() {
             document.getElementById('bank-name-input').value = 'INSERT NETWORK NAME HERE(WOO)'
             break;
     }
+    document.getElementById('address-network').innerText = document.getElementById('bank-name-input').value
     if (isAllInputsCorrect()) {
         const cryptoInput = document.getElementById('crypto-input').value
         document.getElementsByClassName("background-cover")[0].classList.remove("hidden");
